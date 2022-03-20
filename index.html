@@ -2,18 +2,14 @@
 <head>
     <meta charset="utf8">
     <title>d'Brito</title>
-    <link href="http://fonts.cdnfonts.com/css/modern-typewriter" rel="stylesheet">
     <style>
         html{
-            height: 100%
+            height: 100%;
         }
         body {
             background-image: linear-gradient(#C1E1D2, #8BB4DA);
             text-align: center;
-            font-family: 'MODERN TYPEWRITER', sans-serif;
-        }
-        header{
-            margin: auto 0 margin 0;
+            font-family: 'Courier New', Courier, monospace;
         }
         .select{
             background-color: whitesmoke;
@@ -23,20 +19,32 @@
             margin-left: auto;
             margin-right: auto;
             padding: 10px 0 10px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        main{
+            margin: auto;
+            position: sticky;
+            height: fit-content;
         }
         a{
-            text-decoration: none;
-            text-shadow: 1px 1px 0px black;
+            text-decoration: dotted;
             color: black;
+        }
+        .select:hover{
+            color :whitesmoke;
+            background-color: black;
+            box-shadow: 5px 5px 0px whitesmoke;
+            transition: 0.5s;
         }
     </style>
 </head>
 <body>
-    <main>
-        <div style="margin-top: 250px;">
-            <div class="select"><a href="#">Github</a></div>
-            <div class="select"><a href="#">Olá</a></div>
-            <div class="select"><a href="#">Meu currículo!</a></div>
+    <main style="margin-top: 100px;">
+        <img src="dice-nobg.png" width="75px">
+        <div>
+            <div class="select"><a>Github</a></div>
+            <div class="select"><a>Currículo</a></div>
+            <div class="select"><a>Notas de Aula</a></div>
         </div>
     </main>
 </body>
